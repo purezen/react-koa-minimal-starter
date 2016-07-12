@@ -1,9 +1,4 @@
-const Koa = require('koa')
-
-const app = new Koa()
-
-app.use(ctx => {
-  ctx.body = 'Hello Koa'
+require('babel-register')({
+  presets: ['es2015-node5', 'stage-3']
 })
-
-app.listen(3000)
+require('./server.js')
