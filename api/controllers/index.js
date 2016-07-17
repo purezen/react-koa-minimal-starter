@@ -3,7 +3,7 @@ import glob from 'glob'
 export default function aggregateControllers(router) {
   const controllers = glob.sync('*.js', {
                         ignore: ['index.js'],
-                        cwd: process.cwd() + '/controllers'
+                        cwd: process.cwd() + '/api/controllers'
                       })
 
   controllers.map(function (controller) {

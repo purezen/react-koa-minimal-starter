@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --progress",
-    "server": "node index.js",
+    "server": "node api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
