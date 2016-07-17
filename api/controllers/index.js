@@ -1,6 +1,6 @@
 import glob from 'glob'
 
-export default function aggregateControllers(router) {
+export default function attachControllers(router) {
   const controllers = glob.sync('*.js', {
                         ignore: ['index.js'],
                         cwd: process.cwd() + '/api/controllers'

@@ -1,14 +1,13 @@
 import Koa from 'koa'
 import Router from 'koa-router'
-import aggregateControllers from './controllers'
+import attachControllers from './controllers'
 
 const app = new Koa()
-
 const router = new Router({
   prefix: '/api'
 })
 
-aggregateControllers(router)
+attachControllers(router)
 
 app.use(router.routes())
 app.listen(3000)
