@@ -1,0 +1,16 @@
+{
+  "currency" : [
+    {
+      "name" : "US Dollar",
+      "maker" : "United States"
+    },
+    {
+      "name" : "Sterling Pound",
+      "maker" : "Great Britain"
+    },
+    {
+      "name" : "Rupee",
+      "maker" : "India"
+    }
+  ]
+}
