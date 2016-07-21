@@ -17,8 +17,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin()
   ],
   devServer: {
-    colors: true,
-    inline: false,
+    contentBase: './web',
     port: 3001,
     hot: true
   },
