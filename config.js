@@ -1,11 +1,6 @@
 const env = process.env.NODE_ENV || 'development'
 const config = {}
 
-if (env === 'production') {
-  config.API_URL = 'heroku_url'
-}
-else {
-  config.API_URL = 'http://localhost:3000'
-}
+config.API_URL = process.env.HEROKU_URL ? `${process.env.HEROKU_URL}` : 'http://localhost:5000'
 
 module.exports = config

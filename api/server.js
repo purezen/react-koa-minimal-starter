@@ -18,4 +18,4 @@ if (process.env.NODE_ENV === 'production') {
   app.use(serve(path.join(__dirname,'/../build')))
 }
 
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
