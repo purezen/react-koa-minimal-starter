@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --progress",
+    "build": "NODE_ENV=production webpack --progress --colors",
     "server": "node api/index.js",
+    "deploy": "NODE_ENV=production node api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -23,6 +25,7 @@
     "kcors": "^1.2.1",
     "koa": "^2.0.0",
     "koa-router": "^7.0.1",
+    "koa-static": "^3.0.0",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
     "react-hot-loader": "^3.0.0-beta.2",
