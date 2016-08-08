@@ -10,7 +10,7 @@ class App extends Component {
   }
 
   render() {
-    const currencyList = this.props.currencyList.map((c) => <div>{c.name}</div>)
+    const currencyList = this.props.currencyList.map((c,i) => <div key={i}>{c.name}</div>)
 
     return (
       <div>
