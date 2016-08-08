@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --progress",
-    "build": "webpack --progress --colors --display-error-details --config webpack.prod.config.js",
+    "start": "webpack-dev-server --progress --config webpack/dev.config.js",
+    "build": "webpack --progress --colors --display-error-details --config webpack/prod.config.js",
     "server": "node api/index.js",
     "deploy": "NODE_ENV=production node api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"

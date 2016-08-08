@@ -8,7 +8,7 @@ var loaders = [{
     "presets": ["es2015-node5", "stage-3", "react"],
     "plugins": ["react-hot-loader/babel"]
   },
-  include: path.join(__dirname, 'web')
+  include: path.join(__dirname, '../web')
 }];
 var plugins = [
   new webpack.DefinePlugin({
